@@ -1,0 +1,190 @@
+@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:700);
+
+html {
+    font: 16px/1.5 Inconsolata, sans-serif;
+}
+
+@media (min-width: 30rem) {
+    html {
+        font-size: 20px;
+    }
+}
+
+body {
+    margin: 2rem 0 5rem;
+
+    color: #333333;
+}
+
+@media (min-width: 30rem) {
+    body {
+        margin-top: 3rem;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    color: #0074D9; /* From http://clrs.cc */
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0.5rem -0.1rem /* align left edge */;
+
+    color: #111111;
+
+    font-family: Montserrat, sans-serif;
+    line-height: 1;
+
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    margin-bottom: 1rem;
+
+    font-size: 2.5rem;
+}
+
+@media (min-width: 30rem) {
+    h1 {
+        margin-bottom: 3rem;
+
+        font-size: 3rem;
+    }
+}
+
+h1 a {
+    color: inherit;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+
+    font-size: 1.25rem;
+}
+
+@media (min-width: 30rem) {
+    h2 {
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+
+        font-size: 1.5rem;
+    }
+}
+
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1.5rem;
+
+    text-transform: uppercase;
+
+    font-size: 1rem;
+}
+
+p,
+ul,
+ol,
+dl,
+table,
+pre,
+blockquote {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul,
+ol {
+    padding-left: 1.5rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+}
+
+blockquote {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+
+    color: #666666;
+    border-left: 0.25rem solid #CCCCCC;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+hr {
+    position: relative;
+    top: -1px;
+
+    margin: 1.5rem 0;
+
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.container img,
+.container iframe {
+    max-width: 100%;
+}
+
+.container img {
+    display: block;
+
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 0.25rem 0.5rem;
+
+    border: 1px solid #CCCCCC;
+}
+
+pre,
+code {
+    background-color: #EEEEEE;
+
+    font-family: inherit;
+}
+
+pre {
+    padding: 0.5rem 1rem;
+
+    font-size: 0.8rem;
+}
+
+code {
+    padding: 0.1rem 0.25rem;
+}
+
+pre > code {
+    padding: 0;
+}
+
+.container {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

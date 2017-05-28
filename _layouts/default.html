@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+	<meta name="author" content="{{ site.author }}" />
+
+	<!-- Description -->
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<link rel="stylesheet" href="{{ "/reveal.js/css/reveal.css" | prepend: site.baseurl }}"/>
+
+	<!-- Theme -->
+	<link rel="stylesheet" href="{% if site.revealTheme.base %}{{ "/reveal.js/css/theme/" | prepend: site.baseurl | append: site.revealTheme.base | append: '.css' }}{% else %}{{ "/reveal.js/css/theme/black.css" | prepend: site.baseurl }}{% endif %}" id="theme" />
+
+	<!-- Code syntax highlighting -->
+	<!--<link rel="stylesheet" href="{{ "/reveal.js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>-->
+	<link rel="stylesheet" href="{{ "/assets/css/syntax.css" | prepend: site.baseurl }}"/>
+
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}">
+
+	{% if site.revealTheme.custom == "cdc" %}
+	<!-- Custom Theme -->
+	<link rel="stylesheet" href="{{ "/assets/css/theme/" | prepend: site.baseurl | append: site.revealTheme.custom | append: ".css" }}">
+	{% endif %}
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '{{ "/reveal.js/css/print/pdf.css" | prepend: site.baseurl }}' : '{{ "/reveal.js/css/print/paper.css" | prepend: site.baseurl }}';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<link rel="icon" href="//coderdojochi.github.io/favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}" />
+
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+  	<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+			{{ content }}
+		</div>
+	</div>
+
+	<script src="{{ "/reveal.js/lib/js/head.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/reveal.js/js/reveal.js" | prepend: site.baseurl }}"></script>
+	<script>
+		var baseUrl = "{{ site.baseurl }}"
+
+		Reveal.initialize({
+			{% if site.reveal %}{% for attr in site.reveal %}{{ attr[0] }}: {% unless attr[1] == false or attr[1] == true or attr[0] == "width" or attr[0] == "height" or attr[0] == "defaultTiming" or attr[0] == "autoSlide" %}'{{ attr[1] }}',{% else %}{{ attr[1] }},{% endunless %}
+			{% endfor %}{% endif %}
+
+			// available themes are in /css/theme
+			theme: Reveal.getQueryHash().theme,
+
+			// default/cube/page/concave/zoom/linear/fade/none
+			transition: Reveal.getQueryHash().transition || {% if site.reveal.transition %}'{{ site.reveal.transition }}',{% else %}'default',{% endif %}
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: '{{ "/reveal.js/lib/js/classList.js" | prepend: site.baseurl }}', condition: function () { return !document.body.classList; } },
+				{ src: '{{ "/reveal.js/plugin/markdown/marked.js" | prepend: site.baseurl }}', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: '{{ "/reveal.js/plugin/markdown/markdown.js" | prepend: site.baseurl }}', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				//{ src: '{{ "/reveal.js/plugin/highlight/highlight.js" | prepend: site.baseurl }}', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
+				//{ src: '{{ "/reveal.js/plugin/zoom-js/zoom.js" | prepend: site.baseurl }}', async: true },
+				{ src: '{{ "/reveal.js/plugin/notes/notes.js" | prepend: site.baseurl }}', async: true }
+			]
+		});
+		{% if site.slideNumber.format and site.slideNumber.format != "none" %}
+		// Shows the slide number using default formatting
+		Reveal.configure({ slideNumber: true });
+		Reveal.configure({ slideNumber: '{{ site.slideNumber.format }}' });
+		{% endif %}
+
+		{% if site.slideNumber.showSlideNumber %}
+		Reveal.configure({ showSlideNumber: '{{ site.slideNumber.showSlideNumber }}' });
+		{% endif %}
+	</script>
+
+</body>
+</html>

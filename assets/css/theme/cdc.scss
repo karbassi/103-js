@@ -1,0 +1,97 @@
+---
+# CoderDojoChi theme for reveal.js.
+---
+/**
+ * CoderDojoChi theme for reveal.js.
+ *
+ * By CoderDojoChi, http://coderdojochi.org
+ */
+
+// Default mixins and settings -----------------
+@import "../reveal.js/css/theme/template/mixins";
+@import "../reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Quicksand:300,400,500,700&subset=latin-ext");
+
+// Override theme settings (see template/settings.scss)
+$backgroundColor: #CBE9E5;
+$mainColor: #222222;
+$headingColor: #222222;
+$mainFontSize: 42px;
+//$mainFont: 'Open Sans', sans-serif;
+$mainFont: 'Quicksand', sans-serif;
+$headingFont: 'Quicksand', sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 400;
+$linkColor: #3A8042;
+$linkColorHover: darken( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+    &,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #FFFFFF;
+    }
+}
+
+
+// Theme template ------------------------------
+@import "../reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+.reveal section .align-left {
+    text-align: left;
+}
+
+.reveal section .align-right {
+    text-align: right;
+}
+
+.reveal section img.plain {
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.reveal section .light {
+    font-weight: 100;
+}
+
+.reveal section .bold {
+    font-weight: bold;
+}
+
+.reveal section .bottom-note {
+    margin-top: 5em;
+    font-size: 0.5em;
+    font-weight: 100;
+}
+
+.reveal section .bg-grey {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0.5em;
+    color: #FFF;
+}
+
+.reveal section pre {
+    padding: 0.75em 1em;
+}
+
+.reveal section:not(.center) h1:first-of-type,
+.reveal section:not(.center) h2:first-of-type {
+    margin-bottom: 1em;
+}
