@@ -1,4 +1,8 @@
+# 103-JS
+[![Build Status](https://travis-ci.org/CoderDojoChi/103-js.svg?branch=gh-pages)](https://travis-ci.org/CoderDojoChi/103-js)
+
 ## Quick start
+
 
 Fork and clone the repo locally then...
 
