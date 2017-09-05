@@ -1,11 +1,12 @@
 ## Quick start
 
-```shell
-git clone --recursive https://github.com/CoderDojoChi/101-html.git 101-html
-cd $_
+Fork and clone the repo locally then...
+
+```console
+git submodule update --init --recursive
 gem install jekyll bundler
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve -wIo
 ```
 
 ## Where are things?
