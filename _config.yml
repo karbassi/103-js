@@ -25,6 +25,7 @@ exclude:
   - reveal.js/Gruntfile.js
   - reveal.js/LICENSE
   - reveal.js/test/
+  - vendor
 
 include:
   - reveal.js/css/*.css
