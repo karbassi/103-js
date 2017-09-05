@@ -225,7 +225,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer
-  jekyll (~> 3)
+  jekyll (= 3.5.2)
   tzinfo-data
 
 RUBY VERSION
