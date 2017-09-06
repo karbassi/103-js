@@ -44,7 +44,7 @@
 
 	<!-- <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}" /> -->
 
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="canonical" href="{{ page.url | prepend: site.url | replace: 'index.html','' }}">
 
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>

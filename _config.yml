@@ -1,6 +1,14 @@
-title: "101 HTML: An Adventure in HTML"
-baseurl: ""
-url: ""
+# Site settings
+title: "103 Javascript: Painting with Code"
+description: ""
+url: https://coderdojochi.github.io/103-js
+author: "CoderDojoChi <info@coderdojochi.org>"
+email: info@coderdojochi.org
+twitter_username: CoderDojoChi
+github_username:  CoderDojoChi
+facebook_username: CoderDojoChi
+
+baseurl: /103-js
 
 github: [metadata]
 
@@ -16,6 +24,7 @@ sass:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
   - README.md
   - reveal.js/.*
   - reveal.js/*.md
@@ -25,7 +34,6 @@ exclude:
   - reveal.js/Gruntfile.js
   - reveal.js/LICENSE
   - reveal.js/test/
-  - vendor
 
 include:
   - reveal.js/css/*.css
@@ -37,6 +45,15 @@ include:
 collections:
   slides:
     output: false
+  animals:
+    output: false
+
+defaults:
+  - scope:
+      path: "/assets/images/animals/"
+      type: animals
+    values:
+      layout: "animals"
 
 revealTheme:
     base: white

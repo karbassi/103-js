@@ -1,6 +1,6 @@
 ---
-layout: "default"
-permalink: "/slides/"
+layout: default
+permalink: /slides
 ---
 
 {% for slide in site.slides %}
