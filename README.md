@@ -8,7 +8,7 @@ Fork and clone the repo locally then...
 
 ```console
 git submodule update --init --recursive
-gem install jekyll bundler
+gem install bundler
 bundle install
 bundle exec jekyll serve -wIo
 ```
