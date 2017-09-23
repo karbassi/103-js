@@ -81,74 +81,6 @@ permalink: "/notes"
 <script src="our-drawing.js"></script>
 ```
 
-### JS Code (WIP)
-
-(notes)
-
-1. What is a `var`?
-
-2. `var canvas = document.getElementById('drawing');`
-
-3. `var ctx = canvas.getContext('2d');`, 
-
-4. `ctx.beginPath();`
-
-5. `ctx.moveTo(x, y);` and  `ctx.lineTo(x, y);`
-
-6. `ctx.closePath();`
-
-7. `ctx.strokeStyle = "red";` and `ctx.stroke();`
-
-8. `ctx.fillStyle = "#AFAFAF";` and `ctx.fill();`
-
-9. `ctx.arc(x, y, radius, startAngle, endAngle);` and `Math.PI`
-
-10. Radian
-
-![Circle_radians]({{ site.baseurl }}/assets/images/Circle_radians.gif)
-[source](https://upload.wikimedia.org/wikipedia/commons/4/4e/Circle_radians.gif)
-
-![2pi-unrolled]({{ site.baseurl }}/assets/images/2pi-unrolled.gif)
-[source](https://upload.wikimedia.org/wikipedia/commons/6/67/2pi-unrolled.gif)
-
-11. smilie.js challenge
-
-```js
-var canvas = document.getElementById('drawing');
-var ctx = canvas.getContext('2d');
-
-// FACE
-ctx.beginPath();
-ctx.arc(250, 250, 200, 0, 2 * Math.PI);
-ctx.strokeStyle = 'black';
-ctx.stroke();
-ctx.fillStyle = 'yellow';
-ctx.fill();
-
-// LEFT EYE
-ctx.beginPath();
-ctx.arc(175, 175, 25, 0, 2 * Math.PI);
-ctx.fillStyle = "black";
-ctx.fill();
-ctx.stroke();
-
-// RIGHT EYE
-ctx.beginPath();
-ctx.arc(325, 175, 25, 0, 2 * Math.PI);
-ctx.fillStyle = "black";
-ctx.fill();
-ctx.stroke();
-
-// SMILE
-ctx.beginPath();
-ctx.arc(250, 250, 150, 0, Math.PI);
-ctx.lineTo(400, 250);
-ctx.fillStyle = "white";
-ctx.fill();
-ctx.stroke();
-```
-
-(/notes)
 
 #### Beginning
 
@@ -221,3 +153,72 @@ ctx.lineTo(300, 100);
 ctx.stroke();
 ```
 
+
+### JS Code (WIP)
+
+(notes)
+
+1. What is a `var`?
+
+2. `var canvas = document.getElementById('drawing');`
+
+3. `var ctx = canvas.getContext('2d');`, 
+
+4. `ctx.beginPath();`
+
+5. `ctx.moveTo(x, y);` and  `ctx.lineTo(x, y);`
+
+6. `ctx.closePath();`
+
+7. `ctx.strokeStyle = "red";` and `ctx.stroke();`
+
+8. `ctx.fillStyle = "#AFAFAF";` and `ctx.fill();`
+
+9. `ctx.arc(x, y, radius, startAngle, endAngle);` and `Math.PI`
+
+10. Radian
+
+![Circle_radians]({{ site.baseurl }}/assets/images/Circle_radians.gif)
+[source](https://upload.wikimedia.org/wikipedia/commons/4/4e/Circle_radians.gif)
+
+![2pi-unrolled]({{ site.baseurl }}/assets/images/2pi-unrolled.gif)
+[source](https://upload.wikimedia.org/wikipedia/commons/6/67/2pi-unrolled.gif)
+
+11. smilie.js challenge
+
+```js
+var canvas = document.getElementById('drawing');
+var ctx = canvas.getContext('2d');
+
+// FACE
+ctx.beginPath();
+ctx.arc(250, 250, 200, 0, 2 * Math.PI);
+ctx.strokeStyle = 'black';
+ctx.stroke();
+ctx.fillStyle = 'yellow';
+ctx.fill();
+
+// LEFT EYE
+ctx.beginPath();
+ctx.arc(175, 175, 25, 0, 2 * Math.PI);
+ctx.fillStyle = "black";
+ctx.fill();
+ctx.stroke();
+
+// RIGHT EYE
+ctx.beginPath();
+ctx.arc(325, 175, 25, 0, 2 * Math.PI);
+ctx.fillStyle = "black";
+ctx.fill();
+ctx.stroke();
+
+// SMILE
+ctx.beginPath();
+ctx.arc(250, 250, 150, 0, Math.PI);
+ctx.lineTo(400, 250);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.stroke();
+```
+
+(/notes)
