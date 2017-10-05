@@ -3,12 +3,12 @@ const canvas = document.getElementById('porcupine');
 const ctx = canvas.getContext('2d');
 
 const COLORS = {
-  OUTERSPIKE: 'rgb(254, 193, 77)',
-  INNERSPIKE: 'rgb(248, 155, 28)',
-  FACE: 'rgb(190, 119, 50)',
-  EYE: 'rgb(111, 54, 25)',
-  NOSE: 'rgb(58, 31, 9)',
-  FOOT: 'rgb(108, 77, 54)'
+  OUTERSPIKE: '#FEC14D',
+  INNERSPIKE: '#F89B1C',
+  FACE: '#BE7732',
+  EYE: '#6F3619',
+  NOSE: '#3A1F09',
+  FOOT: '#6C4D36'
 };
 
 // OUTER SPIKES

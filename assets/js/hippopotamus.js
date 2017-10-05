@@ -1,15 +1,15 @@
 // SET UP
-var canvas = document.getElementById("hippopotamus");
-var ctx = canvas.getContext("2d");
+const canvas = document.getElementById('hippopotamus');
+const ctx = canvas.getContext('2d');
 
 const COLORS = {
-  BODY: "rgb(182,194,204)",
-  NOSE: "rgb(51, 58, 75)",
-  EYE: "rgb(50, 57, 74)",
-  DOWNNOSE: "rgb(84,101,111)",
-  FACE: "rgb(111, 131, 143)",
-  EARS: "rgb(210, 99, 49)",
-  EARCURVE: "rgb(254, 193, 77)",
+  BODY: '#B6C2CC',
+  NOSE: '#333A4B',
+  EYE: '#32394A',
+  DOWNNOSE: '#54656F',
+  FACE: '#6F838F',
+  EARS: '#D26331',
+  EARCURVE: '#FEC14D'
 };
 
 // BODY
@@ -81,8 +81,8 @@ ctx.fillStyle = COLORS.EYE;
 ctx.fill();
 
 ctx.beginPath();
-ctx.moveTo(198,350);
-ctx.bezierCurveTo(198,350, 208, 338, 218, 350);
+ctx.moveTo(198, 350);
+ctx.bezierCurveTo(198, 350, 208, 338, 218, 350);
 ctx.fillStyle = COLORS.EYE;
 ctx.fill();
 
@@ -94,8 +94,8 @@ ctx.fillStyle = COLORS.EYE;
 ctx.fill();
 
 ctx.beginPath();
-ctx.moveTo(333,350);
-ctx.bezierCurveTo(333,350, 345, 338, 353, 350);
+ctx.moveTo(333, 350);
+ctx.bezierCurveTo(333, 350, 345, 338, 353, 350);
 ctx.fillStyle = COLORS.EYE;
 ctx.fill();
 

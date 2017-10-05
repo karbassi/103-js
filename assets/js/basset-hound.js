@@ -1,5 +1,5 @@
-var canvas = document.getElementById('basset-hound');
-var ctx = canvas.getContext('2d');
+const canvas = document.getElementById('basset-hound');
+const ctx = canvas.getContext('2d');
 
 const COLOR = {
   BODY: '#AC7A34',

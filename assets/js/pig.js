@@ -3,11 +3,11 @@ const canvas = document.getElementById('pig');
 const ctx = canvas.getContext('2d');
 
 const COLORS = {
-  EARSNECK: 'rgb(242, 123, 151)',
-  FACE: 'rgb(248, 175, 188)',
-  EYES: 'rgb(111, 54, 25)',
-  NOSE: 'rgb(207, 5, 92)',
-  EARSNOSE: 'rgb(239, 71, 124)'
+  EARSNECK: '#F27B97',
+  FACE: '#F8AFBC',
+  EYES: '#6F3619',
+  NOSE: '#CF055C',
+  EARSNOSE: '#EF477C'
 };
 
 // NECK

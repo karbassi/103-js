@@ -3,18 +3,18 @@ const canvas = document.getElementById('owl');
 const ctx = canvas.getContext('2d');
 
 const COLORS = {
-  NECK: 'rgb(210, 82, 29)',
-  ORANGEEYE: 'rgb(248, 155, 28)',
-  YELLOWEYE: 'rgb(253, 180, 20)',
-  WHITEEYE: 'rgb(255, 255, 255)',
-  GREYFACE: 'rgb(229, 229, 229)',
-  BROWNFACE: 'rgb(84, 51, 28)',
-  YELLOWFACE: 'rgb(254, 194, 77)',
-  BROWNNOSE: 'rgb(73, 37, 37)',
-  GREYNOSE: 'rgb(213, 213, 214)',
-  BLACKEARS: 'rgb(35, 31, 32)',
-  LEFTEARS: 'rgb(96, 172, 168)',
-  RIGHTEARS: 'rgb(128, 184, 183)'
+  NECK: '#D2521D',
+  ORANGEEYE: '#F89B1C',
+  YELLOWEYE: '#FDB414',
+  WHITEEYE: '#FFFFFF',
+  GREYFACE: '#E5E5E5',
+  BROWNFACE: '#54331C',
+  YELLOWFACE: '#FEC24D',
+  BROWNNOSE: '#492525',
+  GREYNOSE: '#D5D5D6',
+  BLACKEARS: '#231F20',
+  LEFTEARS: '#60ACA8',
+  RIGHTEARS: '#80B8B7'
 };
 
 // NECK

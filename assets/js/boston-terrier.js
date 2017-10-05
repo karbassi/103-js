@@ -8,7 +8,7 @@ const COLORS = {
   GREY: '#A39C99',
   BROWN: '#91632F',
   YELLOW: '#DAC79A',
-  PINK: '#EF477C',
+  PINK: '#EF477C'
 };
 
 // NECK
