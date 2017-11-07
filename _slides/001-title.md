@@ -5,4 +5,4 @@ classes:
     - center
 ---
 
-## Painting with Code
+## An Adventure in HTML
