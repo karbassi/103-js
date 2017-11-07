@@ -6,23 +6,26 @@ permalink: "/cheatsheet/"
 # Javascript Cheat Sheet
 
 ## Starting up
+
 1. Create a new HTML file called `index.html`. This is where your website HTML will be.
+
 2. Create a new Javascript file called `drawing.js`.
+
 3. In the `index.html` file, add the following to the `<head></head>` tag. This is how the HTML load the Javascript.
 
-```html
-<head>
-    <canvas id="drawing" width="500" height="500"></canvas>
-    <script src="drawing.js"></script>
-</head>
-```
+    ```html
+    <head>
+        <canvas id="drawing" width="500" height="500"></canvas>
+        <script src="drawing.js"></script>
+    </head>
+    ```
 
 4. Inside `drawing.js` file, add the following so that the Javascript file detect the specified elements from HTML file.
 
- ```js
- var canvas = document.getElementById('drawing');
- var ctx = canvas.getContext('2d');
- ```
+    ```js
+    var canvas = document.getElementById('drawing');
+    var ctx = canvas.getContext('2d');
+    ```
 
 ## Basic Styles
 
