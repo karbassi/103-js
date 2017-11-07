@@ -41,11 +41,14 @@ permalink: "/cheatsheet/"
 ## Example Page
 
 - Add in the HTML file
+
 ```html
 <canvas id="drawing" width="500" height="500"></canvas>
 <script src="drawing.js"></script>
 ```
+
 - Add in the Javascript file
+
 ```js
 var canvas = document.getElementById('drawing');
 var ctx = canvas.getContext('2d');
