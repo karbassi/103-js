@@ -1,6 +1,6 @@
 ---
 layout: "page"
-permalink: "/notes"
+permalink: "/notes/"
 ---
 
 # Painting with Code

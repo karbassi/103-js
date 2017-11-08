@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "HookyQR.beautify",
+        "sleistner.vscode-fileutils",
+        "Zignd.html-css-class-completion",
+        "bierner.markdown-preview-github-styles",
+        "ginfuru.ginfuru-vscode-jekyll-syntax",
+        "darkriszty.markdown-table-prettify"
+    ]
+}

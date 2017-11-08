@@ -1,0 +1,36 @@
+{
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "_site/**": true,
+        ".sass-cache": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "html.format.extraLiners": " ",
+    "html.format.indentInnerHtml": false,
+    "html.format.preserveNewLines": true,
+    "html.format.maxPreserveNewLines": 2,
+    "html.format.wrapLineLength": 0,
+    "html.suggest.angular1": false,
+    "html.suggest.ionic": false,
+    "[json]": {
+        "editor.tabSize": 4
+    },
+    "[markdown]": {
+        "editor.tabSize": 4,
+        "editor.quickSuggestions": false,
+        "editor.wordWrap": "on",
+        "files.trimTrailingWhitespace": false
+    },
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "files.associations": {
+        "**/_layouts/*.html": "jekyll"
+    },
+    "emmet.includeLanguages": {
+        "jekyll": "html",
+        "scss": "css"
+    }
+}

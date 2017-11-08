@@ -30,7 +30,7 @@ permalink: "/cheatsheet/"
 ## Basic Styles
 
 | Description                                    | Code                                        | Example                                  |
-| :--------------------------------------------- | :------------------------------------------ | :--------------------------------------- |
+|------------------------------------------------|---------------------------------------------|------------------------------------------|
 | Start drawing a shape                          | [`beginPath();`][beginPath]                 | `ctx.beginPath();`                       |
 | Move to a specific point                       | [`moveTo(x, y);`][moveTo]                   | `ctx.moveTo(463, 551);`                  |
 | Draw a path for a line from a point to another | [`lineTo(x, y);`][lineTo]                   | `ctx.lineTo(50, 50);`                    |
