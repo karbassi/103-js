@@ -21,8 +21,7 @@ $backgroundColor: #CBE9E5;
 $mainColor: #222222;
 $headingColor: #222222;
 $mainFontSize: 42px;
-//$mainFont: 'Open Sans', sans-serif;
-$mainFont: 'Quicksand', sans-serif;
+$mainFont: 'Open Sans', sans-serif;
 $headingFont: 'Quicksand', sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
@@ -52,46 +51,3 @@ section.has-dark-background {
 // Theme template ------------------------------
 @import "../reveal.js/css/theme/template/theme";
 // ---------------------------------------------
-
-.reveal section .align-left {
-    text-align: left;
-}
-
-.reveal section .align-right {
-    text-align: right;
-}
-
-.reveal section img.plain {
-    border: 0;
-    background-color: transparent;
-    box-shadow: none;
-}
-
-.reveal section .light {
-    font-weight: 100;
-}
-
-.reveal section .bold {
-    font-weight: bold;
-}
-
-.reveal section .bottom-note {
-    margin-top: 5em;
-    font-size: 0.5em;
-    font-weight: 100;
-}
-
-.reveal section .bg-grey {
-    background-color: rgba(0, 0, 0, 0.75);
-    padding: 0.5em;
-    color: #FFF;
-}
-
-.reveal section pre {
-    padding: 0.75em 1em;
-}
-
-.reveal section:not(.center) h1:first-of-type,
-.reveal section:not(.center) h2:first-of-type {
-    margin-bottom: 1em;
-}

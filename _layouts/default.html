@@ -20,8 +20,7 @@
 	<link rel="stylesheet" href="{% if site.revealTheme.base %}{{ "/reveal.js/css/theme/" | prepend: site.baseurl | append: site.revealTheme.base | append: '.css' }}{% else %}{{ "/reveal.js/css/theme/black.css" | prepend: site.baseurl }}{% endif %}" id="theme" />
 
 	<!-- Code syntax highlighting -->
-	<!--<link rel="stylesheet" href="{{ "/reveal.js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>-->
-	<link rel="stylesheet" href="{{ "/assets/css/syntax.css" | prepend: site.baseurl }}"/>
+	<link rel="stylesheet" href="{{ "/reveal.js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>
 
 	<!-- Custom Styles -->
 	<link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}">
@@ -42,9 +41,9 @@
 
 	<link rel="icon" href="https://coderdojochi.com/favicon.ico" type="image/x-icon">
 
-	<!-- <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}" /> -->
+	<link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}" />
 
-	<link rel="canonical" href="{{ page.url | prepend: site.url | replace: 'index.html','' }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
@@ -79,8 +78,8 @@
 				{ src: '{{ "/reveal.js/lib/js/classList.js" | prepend: site.baseurl }}', condition: function () { return !document.body.classList; } },
 				{ src: '{{ "/reveal.js/plugin/markdown/marked.js" | prepend: site.baseurl }}', condition: function () { return !!document.querySelector('[data-markdown]'); } },
 				{ src: '{{ "/reveal.js/plugin/markdown/markdown.js" | prepend: site.baseurl }}', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-				//{ src: '{{ "/reveal.js/plugin/highlight/highlight.js" | prepend: site.baseurl }}', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
-				//{ src: '{{ "/reveal.js/plugin/zoom-js/zoom.js" | prepend: site.baseurl }}', async: true },
+				{ src: '{{ "/reveal.js/plugin/highlight/highlight.js" | prepend: site.baseurl }}', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: '{{ "/reveal.js/plugin/zoom-js/zoom.js" | prepend: site.baseurl }}', async: true },
 				{ src: '{{ "/reveal.js/plugin/notes/notes.js" | prepend: site.baseurl }}', async: true }
 			]
 		});
@@ -103,7 +102,6 @@
 
     ga('create', 'UA-78618586-2', 'auto');
     ga('send', 'pageview');
-
     </script>
 
 </body>
